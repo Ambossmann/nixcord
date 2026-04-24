@@ -303,7 +303,7 @@ jobs:
     permissions:
       contents: write
       actions: write
-    if: always() && needs.update-plugin.result == 'success' && needs.update-plugin.outputs.changes == 'true'
+    if: always() && needs.update-plugin.result == 'success'
     steps:
       - uses: actions/checkout@v6.0.1
 
